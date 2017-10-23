@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  start: 2017-10-22 21:18:52
+  end: 2017-10-22 21:18:52
+  location: MyString
+  ispublic: false
+
+two:
+  title: MyString
+  start: 2017-10-22 21:18:52
+  end: 2017-10-22 21:18:52
+  location: MyString
+  ispublic: false
