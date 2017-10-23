@@ -1,3 +1,37 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.simple-calendar {
+  .day {
+    width: 50px;
+    height: 100px;
+    border: solid cornflowerblue;
+  }
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {
+    background-color: lightgoldenrodyellow;
+  }
+  .past {}
+  .future {}
+
+  .start-date {}
+
+  .prev-month {
+    background-color: lightgray;
+  }
+  .next-month {
+    background-color: lightgray;
+  }
+  .current-month {}
+
+  .has-events {}
+}
