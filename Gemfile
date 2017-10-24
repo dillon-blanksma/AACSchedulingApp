@@ -20,6 +20,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 # Use Simple Calendar as a third party calendar renderer
 gem 'simple_calendar', '~> 2.0'
+#Devise is used for user authentication
+gem 'devise'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

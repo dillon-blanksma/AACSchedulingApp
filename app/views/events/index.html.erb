@@ -1,35 +1,12 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-2">
+    <h1>Events</h1>
+    <%= link_to 'New Event', new_event_path %>
+  </div>
 
-<h1>Events</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Start</th>
-      <th>End</th>
-      <th>Location</th>
-      <th>Ispublic</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @events.each do |event| %>
-      <tr>
-        <td><%= event.title %></td>
-        <td><%= event.start %></td>
-        <td><%= event.end %></td>
-        <td><%= event.location %></td>
-        <td><%= event.ispublic %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+  <div class="col-md-10">
+    <%= month_calendar do |date| %>
+        <%= date %>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Event', new_event_path %>
+  </div>
+</div>
