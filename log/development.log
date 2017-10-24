@@ -2725,3 +2725,1326 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 1130ms (Views: 1094.2ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:02:08 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (14.0ms)
+  Rendered events/index.html.erb within layouts/application (55.0ms)
+Completed 500 Internal Server Error in 1063ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+    4:     <title >AAC Scheduling</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/cable.js:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___416861361_28950480'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-10-24 10:02:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:02:43 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (8.0ms)
+  Rendered events/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 678ms (Views: 635.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-10-24 10:02:54 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:19:12 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 331ms (Views: 286.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-24 10:22:38 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (22.0ms)
+  Rendered events/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 365ms (Views: 297.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:22:48 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 324ms (Views: 267.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-24 10:23:22 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (4.0ms)
+  Rendered events/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 344ms (Views: 263.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-24 10:23:51 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DqddHEAA5HnYyq7DCybQ9Vph25SwpA47jSn/JbtfxYGzt1Ifm62BQShE8CkkIA3O7fCKLZvdgWNtXRPrcj41rg==", "event"=>{"title"=>"Dinos After Dark", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"26", "start(4i)"=>"06", "start(5i)"=>"30", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"26", "end(4i)"=>"09", "end(5i)"=>"00", "location"=>"Denver Zoo", "ispublic"=>"1"}, "commit"=>"Create Event"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dinos After Dark"], ["start", "2017-10-26 06:30:00"], ["end", "2017-10-26 09:00:00"], ["location", "Denver Zoo"], ["ispublic", "t"], ["created_at", "2017-10-24 16:23:51.406371"], ["updated_at", "2017-10-24 16:23:51.406371"]]
+  [1m[35m (15.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/4
+Completed 302 Found in 26ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/events/4" for 127.0.0.1 at 2017-10-24 10:23:51 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 268ms (Views: 222.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:25:56 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 318ms (Views: 271.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/events/4" for 127.0.0.1 at 2017-10-24 10:28:32 -0600
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4lZK3VyTq4jL7Oe8L5qM2HXfjRb4WHjDPdswVJURdyPy+5Oti7JYoGBXV+zHhGNO46vjFkfxO/7NCKZM2L0Q+w==", "id"=>"4"}
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 4]]
+  [1m[35m (24.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 52ms (ActiveRecord: 31.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:28:32 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 432ms (Views: 363.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-24 10:28:34 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (5.0ms)
+  Rendered events/new.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 291ms (Views: 257.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-24 10:28:48 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7MYqJHuno2ZhMnihBFjvKKUvh0Dr1qeYyHyL/BlAkMNR1iUnoArGXpG8JksrXjITEr7W+cCvKMAoCGcy0CFg7A==", "event"=>{"title"=>"Dinos After Dark", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"24", "start(4i)"=>"16", "start(5i)"=>"28", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"24", "end(4i)"=>"16", "end(5i)"=>"28", "location"=>"", "ispublic"=>"1"}, "commit"=>"Create Event"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dinos After Dark"], ["start", "2017-10-24 16:28:00"], ["end", "2017-10-24 16:28:00"], ["location", ""], ["ispublic", "t"], ["created_at", "2017-10-24 16:28:49.116167"], ["updated_at", "2017-10-24 16:28:49.116167"]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/5
+Completed 302 Found in 27ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/events/5" for 127.0.0.1 at 2017-10-24 10:28:49 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 293ms (Views: 248.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/5" for 127.0.0.1 at 2017-10-24 10:28:54 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 266ms (Views: 230.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/5" for 127.0.0.1 at 2017-10-24 10:28:56 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 297ms (Views: 252.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:28:57 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (3.0ms)
+  Rendered events/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 309ms (Views: 276.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/events/5" for 127.0.0.1 at 2017-10-24 10:29:00 -0600
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HjwsimxgJrpVxg0wQz+uJeLWYKObGjMfqdum1vJTcsQOkfX6u0HVkv59vWCrIUGzdKIOoySzcCJZCDDOv/8VHA==", "id"=>"5"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 5]]
+  [1m[35m (15.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 29ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:29:01 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 303ms (Views: 261.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:29:03 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (3.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 327ms (Views: 261.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-24 10:29:05 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (5.0ms)
+  Rendered events/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 295ms (Views: 263.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-24 10:29:09 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bYbG0i92oYFn7v6RJqj9GxXucVyF1srg3uYfSefZ+sHQlsnR9NvEuZdgoHsJriAgon8g5a6vRbg+kvOHLrgK7g==", "event"=>{"title"=>"d", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"24", "start(4i)"=>"16", "start(5i)"=>"29", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"24", "end(4i)"=>"16", "end(5i)"=>"29", "location"=>"", "ispublic"=>"0"}, "commit"=>"Create Event"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "d"], ["start", "2017-10-24 16:29:00"], ["end", "2017-10-24 16:29:00"], ["location", ""], ["ispublic", "f"], ["created_at", "2017-10-24 16:29:09.684451"], ["updated_at", "2017-10-24 16:29:09.684451"]]
+  [1m[35m (28.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/6
+Completed 302 Found in 38ms (ActiveRecord: 29.0ms)
+
+
+Started GET "/events/6" for 127.0.0.1 at 2017-10-24 10:29:09 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 273ms (Views: 238.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:29:13 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 350ms (Views: 286.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/events/6" for 127.0.0.1 at 2017-10-24 10:29:21 -0600
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsDfWFaLW5X0d/58AFnuHKgVpPBSdiyzeNH7WGg9/1aSbQYogaqovV/MTizoRwGKPmHK8O3fb46IAm1AJZGYjg==", "id"=>"6"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 6]]
+  [1m[35m (15.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 30ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:29:21 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 334ms (Views: 269.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:29:55 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 345ms (Views: 302.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-24 10:29:58 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (5.0ms)
+  Rendered events/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 422ms (Views: 339.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-24 10:30:02 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1QdLK2eBQjaz6OvXrTIU7ad9Tk+gog8wuP8soSGsi+loF0QovCwnDkNmtT2CNMnWEOwf9ovbgGhYi8Bv6M17xg==", "event"=>{"title"=>"Dinos After Dark", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"24", "start(4i)"=>"16", "start(5i)"=>"29", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"24", "end(4i)"=>"16", "end(5i)"=>"29", "location"=>"", "ispublic"=>"0"}, "commit"=>"Create Event"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dinos After Dark"], ["start", "2017-10-24 16:29:00"], ["end", "2017-10-24 16:29:00"], ["location", ""], ["ispublic", "f"], ["created_at", "2017-10-24 16:30:02.565688"], ["updated_at", "2017-10-24 16:30:02.565688"]]
+  [1m[35m (18.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/7
+Completed 302 Found in 31ms (ActiveRecord: 21.0ms)
+
+
+Started GET "/events/7" for 127.0.0.1 at 2017-10-24 10:30:02 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 284ms (Views: 240.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:30:05 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 376ms (Views: 298.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/_form" for 127.0.0.1 at 2017-10-24 10:33:13 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"_form"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=_form):
+  
+app/controllers/events_controller.rb:67:in `set_event'
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:33:25 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 306ms (Views: 269.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/events/7" for 127.0.0.1 at 2017-10-24 10:33:29 -0600
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sI2BHF/ZLH8LLJCyahFIbKD4pdcd9BqD/Un7hYBYuv6gIFhsiPjfV6CXIOKCD6f6NozL16JdWb4Nmm2dzfTdJg==", "id"=>"7"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 7]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 25ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:33:29 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 368ms (Views: 297.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-24 10:33:31 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (5.0ms)
+  Rendered events/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 320ms (Views: 263.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-24 10:33:35 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"reilwKGrScDoAikuOg1eIdSzrjQusa53ccWU0h0K1HIQ+KrDegYs+BiMd8QVC4MaYyL/jQXIIS+RsXgc1GskXQ==", "event"=>{"title"=>"Dinos After Dark", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"24", "start(4i)"=>"16", "start(5i)"=>"33", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"24", "end(4i)"=>"16", "end(5i)"=>"33", "location"=>"", "ispublic"=>"0"}, "commit"=>"Create Event"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dinos After Dark"], ["start", "2017-10-24 16:33:00"], ["end", "2017-10-24 16:33:00"], ["location", ""], ["ispublic", "f"], ["created_at", "2017-10-24 16:33:35.399402"], ["updated_at", "2017-10-24 16:33:35.399402"]]
+  [1m[35m (15.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/8
+Completed 302 Found in 27ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/events/8" for 127.0.0.1 at 2017-10-24 10:33:35 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 264ms (Views: 230.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:33:41 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 394ms (Views: 327.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:39:57 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 330ms (Views: 290.5ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2017-10-24 10:40:00 -0600
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"C+5fwsF6VIOJoTx5YwmMm4/vyLD7N1Db2B1y8ZKt4XYbQ4ayFlunqyIajCmLF2MNGZumsESeE+YozuTp3wGGrg==", "id"=>"8"}
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 8]]
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 19ms (ActiveRecord: 13.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:40:00 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 344ms (Views: 308.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-24 10:40:01 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 299ms (Views: 264.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-24 10:40:06 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DCZ+v8bduHpXq0Ts1/S3eUeOc7140/EEU/z3j3XUnGexNnG8HXDdQqclGgb48mpC8B8iBFOqflyziBtBvLVsSA==", "event"=>{"title"=>"Dinos After Dark", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"24", "start(4i)"=>"16", "start(5i)"=>"40", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"24", "end(4i)"=>"16", "end(5i)"=>"40", "location"=>"", "ispublic"=>"0"}, "commit"=>"Create Event"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dinos After Dark"], ["start", "2017-10-24 16:40:00"], ["end", "2017-10-24 16:40:00"], ["location", ""], ["ispublic", "f"], ["created_at", "2017-10-24 16:40:06.443023"], ["updated_at", "2017-10-24 16:40:06.443023"]]
+  [1m[35m (22.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/9
+Completed 302 Found in 34ms (ActiveRecord: 25.0ms)
+
+
+Started GET "/events/9" for 127.0.0.1 at 2017-10-24 10:40:06 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 260ms (Views: 226.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:40:10 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 441ms (Views: 358.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:40:20 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (3.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 323ms (Views: 286.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-24 10:40:22 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (4.0ms)
+  Rendered events/new.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 320ms (Views: 256.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:40:25 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (3.0ms)
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 327ms (Views: 271.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/events/9" for 127.0.0.1 at 2017-10-24 10:40:29 -0600
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Cfu7vJl6b/a9Idzp025Qocbk2NvAO83QytrbGHVnz74ZVmLMTluc3haabLk7cL83UJC223+Sju06CU0AOMuoZg==", "id"=>"9"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (23.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 50ms (ActiveRecord: 29.9ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:40:29 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (3.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 333ms (Views: 279.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-24 10:40:30 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (12.0ms)
+  Rendered events/new.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 344ms (Views: 267.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-24 10:40:33 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/zTjulKjT6q4l9nA85hhK1LRHszue5gTx/MUXXFoYCZCJOy5iQ4qkkgZhyrcnrwQ5UBPdcUCF0snh/iTuAmQCQ==", "event"=>{"title"=>"d", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"24", "start(4i)"=>"16", "start(5i)"=>"40", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"24", "end(4i)"=>"16", "end(5i)"=>"40", "location"=>"", "ispublic"=>"0"}, "commit"=>"Create Event"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "d"], ["start", "2017-10-24 16:40:00"], ["end", "2017-10-24 16:40:00"], ["location", ""], ["ispublic", "f"], ["created_at", "2017-10-24 16:40:33.598472"], ["updated_at", "2017-10-24 16:40:33.598472"]]
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/10
+Completed 302 Found in 27ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/events/10" for 127.0.0.1 at 2017-10-24 10:40:33 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 257ms (Views: 224.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:40:36 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 323ms (Views: 276.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:49:32 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x000000039c3260>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-10-24 10:49:41 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:50:30 -0600
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 89ms
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x00000002facc18>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:53:44 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20171024165250)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171024165250"]]
+  [1m[35m (20.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:54:36 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-24 10:54:45 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (77.0ms)
+Completed 200 OK in 763ms (Views: 748.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-24 10:54:58 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hFEdtv1+oG00h+BXZ9t9xFylSAX3QiXmHC7g81GHy3yU/MTGKl9TRZ88UAePxZJSytEmBUjrZtvs/XbrHCuspA==", "user"=>{"email"=>"dgblanks@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dgblanks@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 10ms (ActiveRecord: 1.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hFEdtv1+oG00h+BXZ9t9xFylSAX3QiXmHC7g81GHy3yU/MTGKl9TRZ88UAePxZJSytEmBUjrZtvs/XbrHCuspA==", "user"=>{"email"=>"dgblanks@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt_ext):
+  
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+bcrypt-3.1.11-x64 (mingw32) lib/bcrypt.rb:16:in `rescue in <top (required)>'
+bcrypt-3.1.11-x64 (mingw32) lib/bcrypt.rb:12:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+devise (4.3.0) lib/devise/encryptor.rb:1:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+devise (4.3.0) lib/devise/models/database_authenticatable.rb:165:in `password_digest'
+devise (4.3.0) lib/devise/models/database_authenticatable.rb:45:in `password='
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:46:in `public_send'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:46:in `_assign_attribute'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:40:in `block in _assign_attributes'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:39:in `each'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:39:in `_assign_attributes'
+activerecord (5.1.4) lib/active_record/attribute_assignment.rb:26:in `_assign_attributes'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:33:in `assign_attributes'
+activerecord (5.1.4) lib/active_record/core.rb:337:in `initialize'
+activerecord (5.1.4) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.1.4) lib/active_record/inheritance.rb:66:in `new'
+devise (4.3.0) app/controllers/devise/sessions_controller.rb:9:in `new'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:242:in `block in action'
+devise (4.3.0) lib/devise/failure_app.rb:73:in `recall'
+devise (4.3.0) lib/devise/failure_app.rb:39:in `respond'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:242:in `block in action'
+devise (4.3.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.3.0) lib/devise/delegator.rb:5:in `call'
+warden (1.2.7) lib/warden/manager.rb:143:in `call_failure_app'
+warden (1.2.7) lib/warden/manager.rb:129:in `process_unauthenticated'
+warden (1.2.7) lib/warden/manager.rb:44:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-10-24 10:56:39 -0600
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-24 10:56:39 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 400ms (Views: 398.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-10-24 10:56:43 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 412ms (Views: 410.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-10-24 10:56:59 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GE4N2qMLn379lCUnJPj3rVhUec25yEa1RTDUguTCFfwI49SqdCpsVlYvlXfM5hg7ziAXzQZhBYi140KaqW5yJA==", "user"=>{"email"=>"dgblanks@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt_ext):
+  
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+bcrypt-3.1.11-x64 (mingw32) lib/bcrypt.rb:16:in `rescue in <top (required)>'
+bcrypt-3.1.11-x64 (mingw32) lib/bcrypt.rb:12:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+devise (4.3.0) lib/devise/encryptor.rb:1:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+devise (4.3.0) lib/devise/models/database_authenticatable.rb:165:in `password_digest'
+devise (4.3.0) lib/devise/models/database_authenticatable.rb:45:in `password='
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:46:in `public_send'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:46:in `_assign_attribute'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:40:in `block in _assign_attributes'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:39:in `each'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:39:in `_assign_attributes'
+activerecord (5.1.4) lib/active_record/attribute_assignment.rb:26:in `_assign_attributes'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:33:in `assign_attributes'
+activerecord (5.1.4) lib/active_record/core.rb:337:in `initialize'
+activerecord (5.1.4) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.1.4) lib/active_record/inheritance.rb:66:in `new'
+devise (4.3.0) lib/devise/models/registerable.rb:20:in `new_with_session'
+devise (4.3.0) app/controllers/devise/registrations_controller.rb:101:in `build_resource'
+devise (4.3.0) app/controllers/devise/registrations_controller.rb:15:in `create'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.4) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-10-24 14:21:27 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-24 14:21:36 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (96.0ms)
+Completed 200 OK in 779ms (Views: 764.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-24 14:22:28 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vXdmv0Awx3IbCImdlxX/sHGcFDPIws+3JXjz+Ux0jkqt2r/PlxE0WrCzOc1/CxAm5+h6M3drjIrVq2XhAdjpkg==", "user"=>{"email"=>"dgblanks@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dgblanks@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 14ms (ActiveRecord: 1.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vXdmv0Awx3IbCImdlxX/sHGcFDPIws+3JXjz+Ux0jkqt2r/PlxE0WrCzOc1/CxAm5+h6M3drjIrVq2XhAdjpkg==", "user"=>{"email"=>"dgblanks@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt_ext):
+  
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+bcrypt-3.1.11-x64 (mingw32) lib/bcrypt.rb:16:in `rescue in <top (required)>'
+bcrypt-3.1.11-x64 (mingw32) lib/bcrypt.rb:12:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+devise (4.3.0) lib/devise/encryptor.rb:1:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+devise (4.3.0) lib/devise/models/database_authenticatable.rb:165:in `password_digest'
+devise (4.3.0) lib/devise/models/database_authenticatable.rb:45:in `password='
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:46:in `public_send'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:46:in `_assign_attribute'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:40:in `block in _assign_attributes'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:39:in `each'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:39:in `_assign_attributes'
+activerecord (5.1.4) lib/active_record/attribute_assignment.rb:26:in `_assign_attributes'
+activemodel (5.1.4) lib/active_model/attribute_assignment.rb:33:in `assign_attributes'
+activerecord (5.1.4) lib/active_record/core.rb:337:in `initialize'
+activerecord (5.1.4) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.1.4) lib/active_record/inheritance.rb:66:in `new'
+devise (4.3.0) app/controllers/devise/sessions_controller.rb:9:in `new'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:242:in `block in action'
+devise (4.3.0) lib/devise/failure_app.rb:73:in `recall'
+devise (4.3.0) lib/devise/failure_app.rb:39:in `respond'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:242:in `block in action'
+devise (4.3.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.3.0) lib/devise/delegator.rb:5:in `call'
+warden (1.2.7) lib/warden/manager.rb:143:in `call_failure_app'
+warden (1.2.7) lib/warden/manager.rb:129:in `process_unauthenticated'
+warden (1.2.7) lib/warden/manager.rb:44:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-10-24 14:25:35 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-24 14:25:43 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 710ms (Views: 697.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-10-24 14:25:51 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 404ms (Views: 401.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-10-24 14:26:15 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g//FzHz8ute606PS8n48/aSKKMqcl1OZkNCJE0UjsK4S3XICPRYc0IgI7jFw59mfDqzcNNLD0v9AhYlA4hYMdQ==", "user"=>{"email"=>"dgblanks@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dgblanks@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "dgblanks@gmail.com"], ["encrypted_password", "$2a$11$jEsHU1wFeU7pferhsKd42u2BAYTiWp0A/GsPsI2hZAdQ6u3YGEJyW"], ["created_at", "2017-10-24 20:26:15.957184"], ["updated_at", "2017-10-24 20:26:15.957184"]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-10-24 20:26:15.975184"], ["last_sign_in_at", "2017-10-24 20:26:15.975184"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-10-24 20:26:15.976185"], ["id", 1]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 578ms (ActiveRecord: 27.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 14:26:16 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 312ms (Views: 267.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-10-24 14:26:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/events/10" for 127.0.0.1 at 2017-10-24 14:26:24 -0600
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6AALV1xhyiaJRDu0siGiMznnS/lvZvV5gQRp43fZKKr4rdIni0A5DiL/i+RaP02lr5Ml+dDPtkRx1//7OnVPcg==", "id"=>"10"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 10]]
+  [1m[35m (17.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 34ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-24 14:26:24 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 307ms (Views: 271.7ms | ActiveRecord: 0.0ms)
+
+
