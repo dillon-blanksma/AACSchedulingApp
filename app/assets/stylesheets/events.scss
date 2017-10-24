@@ -1,10 +1,26 @@
 // Place all the styles related to the Events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.simple-calendar {
+.events-section {
+  border: solid;
+  border-radius: 5px;
+  padding: 5px;
+}
 
+.event-calendar {
+  padding: 2px;
+  background-color: cornflowerblue;
+  color: white;
+}
+.simple-calendar {
+  .week-header {
+    border: solid cornflowerblue;
+    background-color: cornflowerblue;
+    color: white;
+  }
   .calendar-heading {
-    font: medium Consolas
+    font-size: medium;
+    padding-bottom: 5px;
   }
 
   .calendar-title {
@@ -40,4 +56,15 @@
   .current-month {}
 
   .has-events {}
+}
+
+.new-event-button {
+  padding: 5px;
+  border: solid;
+  border-radius: 3px;
+  background-color: cornflowerblue;
+  color: white !important;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
 }

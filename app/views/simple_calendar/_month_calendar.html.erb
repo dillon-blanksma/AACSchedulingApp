@@ -6,10 +6,10 @@
   </div>
 
   <table class="table table-striped">
-    <thead>
+    <thead class="week-header">
       <tr>
         <% date_range.slice(0, 7).each do |day| %>
-          <th style="border: solid cornflowerblue"><%= t('date.abbr_day_names')[day.wday] %></th>
+          <th><%= t('date.abbr_day_names')[day.wday] %></th>
         <% end %>
       </tr>
     </thead>

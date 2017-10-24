@@ -1901,3 +1901,827 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 294ms (Views: 279.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/events" for 127.0.0.1 at 2017-10-23 20:49:42 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 298ms (Views: 281.8ms)
+
+
+Started GET "/events?start_date=2017-11-05" for 127.0.0.1 at 2017-10-23 20:50:28 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-11-05"}
+  Rendering events/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.0ms)
+  Rendered events/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 165ms (Views: 150.3ms)
+
+
+Started GET "/events?start_date=2017-12-03" for 127.0.0.1 at 2017-10-23 20:50:29 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-12-03"}
+  Rendering events/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (7.0ms)
+  Rendered events/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 152ms (Views: 138.0ms)
+
+
+Started GET "/events?start_date=2017-11-25" for 127.0.0.1 at 2017-10-23 20:50:31 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-11-25"}
+  Rendering events/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.0ms)
+  Rendered events/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 151ms (Views: 136.4ms)
+
+
+Started GET "/events?start_date=2017-10-28" for 127.0.0.1 at 2017-10-23 20:50:32 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-10-28"}
+  Rendering events/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.0ms)
+  Rendered events/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 167ms (Views: 150.5ms)
+
+
+Started GET "/events?start_date=2017-10-28" for 127.0.0.1 at 2017-10-23 20:53:53 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-10-28"}
+  Rendering events/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (8.0ms)
+  Rendered events/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 393ms (Views: 369.9ms)
+
+
+Started GET "/events?start_date=2017-10-28" for 127.0.0.1 at 2017-10-23 20:59:14 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-10-28"}
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (6.0ms)
+  Rendered events/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 165ms (Views: 151.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events?start_date=2017-10-28" for 127.0.0.1 at 2017-10-23 20:59:34 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-10-28"}
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 167ms (Views: 152.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events?start_date=2017-10-28" for 127.0.0.1 at 2017-10-23 21:02:25 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-10-28"}
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (6.0ms)
+  Rendered events/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 271ms (Views: 258.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events?start_date=2017-10-28" for 127.0.0.1 at 2017-10-23 21:02:44 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-10-28"}
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (6.0ms)
+  Rendered events/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 312ms (Views: 298.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events?start_date=2017-10-28" for 127.0.0.1 at 2017-10-23 21:06:55 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-10-28"}
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (10.0ms)
+  Rendered events/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 261ms (Views: 241.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-23 21:07:05 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (6.5ms)
+  Rendered events/new.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 216ms (Views: 192.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-23 21:09:31 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I5Tg0wm2Mz0m5D2GKq14m+Pc+o48O/ISc1S5ZRF4YrTs0F4gTL+85vTrifTcajyNcknIXyLodtIVX55IR11RoQ==", "event"=>{"title"=>"Dinos After Dark", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"26", "start(4i)"=>"06", "start(5i)"=>"30", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"26", "end(4i)"=>"09", "end(5i)"=>"00", "location"=>"Denver Zoo", "ispublic"=>"1"}, "commit"=>"Create Event"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dinos After Dark"], ["start", "2017-10-26 06:30:00"], ["end", "2017-10-26 09:00:00"], ["location", "Denver Zoo"], ["ispublic", "t"], ["created_at", "2017-10-24 03:09:31.230817"], ["updated_at", "2017-10-24 03:09:31.230817"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/1
+Completed 302 Found in 22ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2017-10-23 21:09:31 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 210ms (Views: 144.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:09:38 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 165ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:16:40 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 170ms (Views: 155.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:16:50 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 209ms (Views: 196.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:17:13 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 166ms (Views: 151.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:17:32 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 186ms (Views: 167.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:17:42 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 170ms (Views: 156.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:19:59 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (11.5ms)
+  Rendered events/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 326ms (Views: 306.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:28:39 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 177ms (Views: 156.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:29:48 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 318ms (Views: 303.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:31:11 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 326ms (Views: 305.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:31:53 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 166ms (Views: 149.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:32:14 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 309ms (Views: 295.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:32:24 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (8.5ms)
+  Rendered events/index.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 418ms (Views: 402.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:32:58 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 311ms (Views: 297.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:33:09 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 327ms (Views: 313.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:33:46 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 339ms (Views: 325.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:34:02 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 307ms (Views: 293.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:34:23 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 320ms (Views: 304.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:34:40 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (7.5ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 405ms (Views: 390.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:35:46 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (12.0ms)
+  Rendered events/index.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 416ms (Views: 400.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:35:48 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 183ms (Views: 159.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:36:21 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 292ms (Views: 278.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:36:50 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 346ms (Views: 332.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:37:18 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 364ms (Views: 341.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:37:28 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 306ms (Views: 289.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:37:34 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 340ms (Views: 319.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:37:52 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 307ms (Views: 292.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:38:22 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 326ms (Views: 312.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:38:25 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 175ms (Views: 160.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:38:26 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 181ms (Views: 166.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:38:41 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 313ms (Views: 290.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:38:53 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 311ms (Views: 296.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:40:07 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 384ms (Views: 360.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:40:10 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 186ms (Views: 168.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:40:12 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 206ms (Views: 187.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:40:24 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (6.0ms)
+  Rendered events/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 729ms (Views: 715.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:40:51 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 313ms (Views: 299.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:41:57 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 329ms (Views: 314.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:42:15 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.5ms)
+  Rendered events/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 334ms (Views: 320.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:42:29 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 290ms (Views: 276.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:42:43 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 343ms (Views: 327.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:42:53 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.5ms)
+  Rendered events/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 321ms (Views: 299.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:45:34 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 170ms (Views: 156.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:45:40 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 194ms (Views: 174.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:45:46 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.5ms)
+  Rendered events/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 247ms (Views: 205.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:48:59 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (39.8ms)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `start_time' for #<Event:0x0000000671cd10>
+Did you mean?  start=):
+    10:   </div>
+    11: 
+    12:   <div class="col-md-9">
+    13:     <%= month_calendar events: @events do |date, events| %>
+    14:         <%= date.day %>
+    15: 
+    16:         <% events.each do |e| %>
+  
+app/views/events/index.html.erb:13:in `_app_views_events_index_html_erb___244626686_46755140'
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:49:38 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 176ms (Views: 160.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:52:12 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 298ms (Views: 282.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 21:53:28 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 180ms (Views: 166.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:00:06 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/dgbla/RubymineProjects/AACSchedulingApp/app/views/events/index.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+...er.append=( link_to 'Destroy' e, method: :delete, data: {con...
+...                               ^):
+  
+app/views/events/index.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:00:28 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 179ms (Views: 162.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:01:29 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 175ms (Views: 159.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:01:53 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 165ms (Views: 145.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/events/1" for 127.0.0.1 at 2017-10-23 22:02:18 -0600
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Fs1FSbREHOKM3YtSFjDXmbyZlTw8c9Och6RlEKE/uaMRVdG2PM5AK0Oosy/rnFeBv62tw40gC/Id+hymzTZ4iw==", "id"=>"1"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 1]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 23ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:02:18 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 190ms (Views: 172.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-23 22:02:21 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 159ms (Views: 145.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-23 22:03:34 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"drsawfzSEIujUWPGIYkP4v6a08OLIgDVaGDZaHkbxo65/6QyudufUHFe17TXTkv0bw/hEpXxhBUOa/5FLz71mw==", "event"=>{"title"=>"Dinos After Dark", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"26", "start(4i)"=>"06", "start(5i)"=>"30", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"26", "end(4i)"=>"09", "end(5i)"=>"00", "location"=>"Denver Zoo", "ispublic"=>"0"}, "commit"=>"Create Event"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dinos After Dark"], ["start", "2017-10-26 06:30:00"], ["end", "2017-10-26 09:00:00"], ["location", "Denver Zoo"], ["ispublic", "f"], ["created_at", "2017-10-24 04:03:34.777013"], ["updated_at", "2017-10-24 04:03:34.777013"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/2
+Completed 302 Found in 21ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/events/2" for 127.0.0.1 at 2017-10-23 22:03:34 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 167ms (Views: 145.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:03:45 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 161ms (Views: 146.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/2/edit" for 127.0.0.1 at 2017-10-23 22:03:47 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (7.0ms)
+  Rendered events/edit.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 181ms (Views: 161.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/2" for 127.0.0.1 at 2017-10-23 22:03:49 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 146ms (Views: 130.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:03:51 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 167ms (Views: 151.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:04:44 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 317ms (Views: 302.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:05:05 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 316ms (Views: 299.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events?start_date=2017-11-05" for 127.0.0.1 at 2017-10-23 22:06:07 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-11-05"}
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (8.5ms)
+  Rendered events/index.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 223ms (Views: 206.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events?start_date=2017-10-28" for 127.0.0.1 at 2017-10-23 22:06:09 -0600
+Processing by EventsController#index as HTML
+  Parameters: {"start_date"=>"2017-10-28"}
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (6.0ms)
+  Rendered events/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 170ms (Views: 156.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-10-23 22:06:48 -0600
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (8.0ms)
+  Rendered events/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 231ms (Views: 212.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-10-23 22:06:57 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vQjEf46Ih5mFh1+92Il3kSNaFvCTgSghCAv9/is5/+VyTHqMy4EIQleI688uTjOHss8kIY1SrOFuANrTfRzM8A==", "event"=>{"title"=>"sldknaoibnoikslkdddddddddfslkdnvnslknvonskdnvsdknlvsdv", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"24", "start(4i)"=>"04", "start(5i)"=>"06", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"24", "end(4i)"=>"04", "end(5i)"=>"06", "location"=>"", "ispublic"=>"0"}, "commit"=>"Create Event"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "end", "location", "ispublic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "sldknaoibnoikslkdddddddddfslkdnvnslknvonskdnvsdknlvsdv"], ["start", "2017-10-24 04:06:00"], ["end", "2017-10-24 04:06:00"], ["location", ""], ["ispublic", "f"], ["created_at", "2017-10-24 04:06:57.629121"], ["updated_at", "2017-10-24 04:06:57.629121"]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events/3
+Completed 302 Found in 18ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/events/3" for 127.0.0.1 at 2017-10-23 22:06:57 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 178ms (Views: 157.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:06:59 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 169ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/events/2" for 127.0.0.1 at 2017-10-23 22:07:23 -0600
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GjjDFkNLF1rVefZeeb7k7Wol+g5W5jv9bkQSn7oPz24doFfpy8FLkxoMziOEEmT1aRHC8ee145P0Gmsp1gYORg==", "id"=>"2"}
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 2]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 22ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:07:23 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (6.0ms)
+  Rendered events/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 170ms (Views: 154.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:08:31 -0600
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (9.0ms)
+  Rendered events/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 233ms (Views: 217.5ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/events" for 127.0.0.1 at 2017-10-23 22:12:07 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (60.3ms)
+  Rendered events/index.html.erb within layouts/application (89.3ms)
+Completed 200 OK in 1130ms (Views: 1094.2ms | ActiveRecord: 1.0ms)
+
+
