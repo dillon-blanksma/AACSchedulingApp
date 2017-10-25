@@ -17,6 +17,11 @@
     </div>
 
     <div class="field">
+      <%= f.label 'Category' %>
+      <%= f.collection_select :category_id, Event.categories, :first, :last, id: :event_category_id %>
+    </div>
+
+    <div class="field">
       <%= f.label :start %>
       <%= f.datetime_select :start, id: :event_start %>
     </div>
@@ -32,7 +37,7 @@
     </div>
 
     <div class="field">
-      <%= f.label :ispublic %>
+      <%= f.label 'Public' %>
       <%= f.check_box :ispublic, id: :event_ispublic %>
     </div>
 

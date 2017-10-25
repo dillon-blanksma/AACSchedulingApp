@@ -1,8 +1,14 @@
 class Event < ApplicationRecord
   # I am making the assumption that Categories are static and not user-defined.
-  @@categories = [:class, :meeting, :sport_event, :work_event, :social_event]
+  @@categories = {
+      :class => 'Class',
+      :meeting => 'Meeting',
+      :sport_event => 'Sport Event',
+      :work_event => 'Work Event',
+      :social_event => 'Social Event',
+      :other => 'Other'
+  }
 
-  attr_accessor :category
   attr_accessor :tasks
   attr_accessor :comments
 

@@ -4644,3 +4644,409 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 161ms (Views: 137.8ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/events" for 127.0.0.1 at 2017-10-25 09:49:16 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-25 09:49:25 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (118.0ms)
+Completed 200 OK in 946ms (Views: 926.8ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-25 09:57:37 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rtG5QdLoMPYOJNi+CeR2OFPRGCrJSQFPKLVgizxKyKF0FPtFDTtqc/GjQj3Ibzg4SFMmfwzgQ3iuku2qarX6/A==", "user"=>{"email"=>"dgblanks@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dgblanks@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-10-25 15:57:38.142395"], ["sign_in_count", 2], ["updated_at", "2017-10-25 15:57:38.144401"], ["id", 1]]
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/events
+Completed 302 Found in 692ms (ActiveRecord: 15.1ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 09:57:38 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 346ms (Views: 308.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 12:35:05 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 33ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-25 12:35:14 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 728ms (Views: 724.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-25 12:35:21 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ShkIsbmlK55+zRVCaDchEYCZogRkNuSbG3iuHShHzDpatNHBboTYttV2pRKAKc6HFu3MBNufp6brqzgFZeur4g==", "user"=>{"email"=>"dgblanks@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dgblanks@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-10-25 18:35:22.282955"], ["last_sign_in_at", "2017-10-25 15:57:38.142395"], ["sign_in_count", 3], ["updated_at", "2017-10-25 18:35:22.283961"], ["id", 1]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 637ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 12:35:22 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered events/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 341ms (Views: 300.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 12:35:42 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (30.0ms)
+  Rendered events/edit.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 457ms (Views: 341.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 12:41:20 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 351ms (Views: 302.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 12:41:23 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (12.0ms)
+  Rendered events/edit.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 406ms (Views: 325.8ms | ActiveRecord: 2.0ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnToEvent (20171025184520)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "events" ADD "category_id" integer[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171025184520"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/events" for 127.0.0.1 at 2017-10-25 12:49:10 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (9.0ms)
+  Rendered events/index.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 648ms (Views: 579.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 12:49:31 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (32.0ms)
+  Rendered events/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 454ms (Views: 355.3ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/events/11" for 127.0.0.1 at 2017-10-25 12:49:37 -0600
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NNmcAC12pCuk+KruB4S4Vi4b31YHFlITxZIYb4cepJb5LTUQshHtRZnkIK9e6ZOqszAT66Qw+R1gF+7njMK05A==", "event"=>{"title"=>"Dinos After Dark", "category_id"=>"social_event", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"25", "start(4i)"=>"04", "start(5i)"=>"38", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"25", "end(4i)"=>"04", "end(5i)"=>"38", "location"=>"Denver Zoo", "ispublic"=>"1"}, "commit"=>"Update Event", "id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Unpermitted parameter: :category_id
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 16ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 12:49:38 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 303ms (Views: 261.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 12:49:40 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (5.0ms)
+  Rendered events/edit.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 300ms (Views: 262.2ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/events/11" for 127.0.0.1 at 2017-10-25 12:52:51 -0600
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W3i1pw/1CME2eqs3V8Dorg8RciXqhA7ewCs26fobrQiWjBy3kJJBrwtmIXYOrcNSkjq+mEmipdBlrsBh8ce9eg==", "event"=>{"title"=>"Dinos After Dark", "category_id"=>"social_event", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"25", "start(4i)"=>"04", "start(5i)"=>"38", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"25", "end(4i)"=>"04", "end(5i)"=>"38", "location"=>"Denver Zoo", "ispublic"=>"1"}, "commit"=>"Update Event", "id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Unpermitted parameter: :category_id
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 15ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 12:52:51 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 314ms (Views: 271.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 12:52:53 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (12.0ms)
+  Rendered events/edit.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 350ms (Views: 276.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/_form" for 127.0.0.1 at 2017-10-25 13:03:14 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"_form"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 2.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=_form):
+  
+app/controllers/events_controller.rb:68:in `set_event'
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 13:04:08 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (8.0ms)
+  Rendered events/edit.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 476ms (Views: 400.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 13:04:31 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (13.0ms)
+  Rendered events/edit.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 323ms (Views: 278.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/_form" for 127.0.0.1 at 2017-10-25 13:09:56 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"_form"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=_form):
+  
+app/controllers/events_controller.rb:68:in `set_event'
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 13:10:01 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/edit.html.erb within layouts/application (625.5ms)
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 13:10:04 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/edit.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 2948ms (Views: 2332.2ms | ActiveRecord: 1.0ms)
+
+
+Completed 200 OK in 360ms (Views: 314.1ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/events/11" for 127.0.0.1 at 2017-10-25 13:10:09 -0600
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yGInp/Ri4/jLqrNAz45xsrlOYzTwp0qB65fI0oVs0j5zk8xEpD7YdAVP4mqVEl86ry7uAt+A0jeBlWfLQX+mdA==", "event"=>{"title"=>"Dinos After Dark", "categoryid"=>"social_event", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"25", "start(4i)"=>"04", "start(5i)"=>"38", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"25", "end(4i)"=>"04", "end(5i)"=>"38", "location"=>"Denver Zoo", "ispublic"=>"1"}, "commit"=>"Update Event", "id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Unpermitted parameter: :categoryid
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 13:10:09 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (3.0ms)
+  Rendered events/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 320ms (Views: 286.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 13:10:12 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/edit.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 302ms (Views: 264.1ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/events/11" for 127.0.0.1 at 2017-10-25 13:10:32 -0600
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LE2jEyx7TGQbDBwWUVVSPX0JCBPXDG1fMllgHhEqiSPhuQoDsxwFCiYQllcIOHnB4CLErnQqxlGX3JaWGvaZUQ==", "event"=>{"title"=>"Dinos After Dark", "categoryid"=>"class", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"25", "start(4i)"=>"04", "start(5i)"=>"38", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"25", "end(4i)"=>"04", "end(5i)"=>"38", "location"=>"Denver Zoo", "ispublic"=>"0"}, "commit"=>"Update Event", "id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Unpermitted parameter: :categoryid
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "events" SET "ispublic" = ?, "updated_at" = ? WHERE "events"."id" = ?[0m  [["ispublic", "f"], ["updated_at", "2017-10-25 19:10:33.025556"], ["id", 11]]
+  [1m[35m (21.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 35ms (ActiveRecord: 24.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 13:10:33 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (3.0ms)
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 311ms (Views: 276.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 13:10:34 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/edit.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 655ms (Views: 563.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 13:12:11 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (4.0ms)
+  Rendered events/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 354ms (Views: 306.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 13:12:14 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/edit.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 380ms (Views: 295.9ms | ActiveRecord: 3.0ms)
+
+
+Started PATCH "/events/11" for 127.0.0.1 at 2017-10-25 13:12:19 -0600
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IM6jImxxFItGLujgfwxU2+7tWPzJeYeRR8w6etZtp4vtOgoy8xZd5XsyYqEmYX8nc8aUQWpfLJ/iSczy3bG3+Q==", "event"=>{"title"=>"Dinos After Dark", "category_id"=>"social_event", "start(1i)"=>"2017", "start(2i)"=>"10", "start(3i)"=>"25", "start(4i)"=>"04", "start(5i)"=>"38", "end(1i)"=>"2017", "end(2i)"=>"10", "end(3i)"=>"25", "end(4i)"=>"04", "end(5i)"=>"38", "location"=>"Denver Zoo", "ispublic"=>"0"}, "commit"=>"Update Event", "id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Unpermitted parameter: :category_id
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/events
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-10-25 13:12:19 -0600
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered simple_calendar/_month_calendar.html.erb (9.0ms)
+  Rendered events/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 331ms (Views: 294.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 13:12:20 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/edit.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 307ms (Views: 270.6ms | ActiveRecord: 1.0ms)
+
+
