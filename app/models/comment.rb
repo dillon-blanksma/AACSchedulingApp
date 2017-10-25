@@ -1,4 +1,2 @@
-
-class Comment
-  attr_accessor :content
+class Comment < ApplicationRecord
 end

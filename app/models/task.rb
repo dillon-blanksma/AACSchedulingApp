@@ -1,4 +1,2 @@
-
-class Task
-  attr_accessor :name, :priority
+class Task < ApplicationRecord
 end

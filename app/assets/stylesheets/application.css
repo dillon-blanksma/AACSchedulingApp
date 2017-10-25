@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+.section {
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+}
+.section-header {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.section-body {
+
+}
+
+.section-footer {
+
+}
+
