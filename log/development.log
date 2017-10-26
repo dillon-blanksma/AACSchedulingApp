@@ -5848,3 +5848,173 @@ Processing by EventsController#edit as HTML
 Completed 200 OK in 167ms (Views: 144.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:50:05 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (5.0ms)
+  Rendered events/edit.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 212ms (Views: 196.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:52:18 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (8.5ms)
+  Rendered events/edit.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 201ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:54:24 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (5.0ms)
+  Rendered events/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 167ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:56:29 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (5.5ms)
+  Rendered events/edit.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 152ms (Views: 136.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:56:54 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (5.5ms)
+  Rendered events/edit.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 152ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:57:24 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (14.0ms)
+  Rendered events/edit.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 190ms (Views: 175.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:57:41 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (5.5ms)
+  Rendered events/edit.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 156ms (Views: 140.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:58:48 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (4.5ms)
+  Rendered events/edit.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 155ms (Views: 137.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:59:09 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (4.5ms)
+  Rendered events/edit.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 192ms (Views: 177.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 21:59:16 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (9.0ms)
+  Rendered events/edit.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 209ms (Views: 193.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 22:03:25 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (5.5ms)
+  Rendered events/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 229ms (Views: 212.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 22:04:22 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (5.5ms)
+  Rendered events/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 184ms (Views: 167.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 22:04:35 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (16.0ms)
+  Rendered events/edit.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 153ms (Views: 137.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events/11/edit" for 127.0.0.1 at 2017-10-25 22:05:11 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_eventsForm.html.erb (5.0ms)
+  Rendered events/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 157ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-10-25 22:05:31 -0600
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_tasksForm.html.erb (8.0ms)
+  Rendered tasks/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 181ms (Views: 162.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2017-10-25 22:05:33 -0600
+Processing by CommentsController#new as HTML
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/_commentsForm.html.erb (1.5ms)
+  Rendered comments/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 150ms (Views: 132.0ms | ActiveRecord: 0.5ms)
+
+

@@ -43,6 +43,14 @@
           <div class="col-sm-6 right-justify"><%= f.label 'Is this event public?' %></div>
           <div class="col-sm-6 left-justify"><%= f.check_box :ispublic, id: :event_ispublic %></div>
         </div>
+
+        <div class="row row-padding">
+          <div class="col-sm-6"></div>
+          <div class="col-sm-6 right-justify">
+            <%= link_to 'Add Task', new_task_path, {:class => 'button'} %>
+            <%= link_to 'Add Comment', new_comment_path, {:class => 'button'} %>
+          </div>
+        </div>
       </div>
 
       <!-- Tasks Section -->
