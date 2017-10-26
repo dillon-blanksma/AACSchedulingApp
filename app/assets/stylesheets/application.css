@@ -17,10 +17,14 @@
 .section {
     border-radius: 5px;
     border: 1px solid cornflowerblue;
+    padding: 0px;
+    margin: 10px;
 }
 .section-header {
     background-color: cornflowerblue;
     text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 .section-body {
@@ -29,5 +33,17 @@
 
 .section-footer {
 
+}
+
+.right-justify {
+    text-align: right;
+}
+
+.left-justify {
+    text-align: left;
+}
+
+.row-padding {
+    padding-top: 3px;
 }
 

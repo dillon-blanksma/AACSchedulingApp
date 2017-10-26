@@ -14,47 +14,51 @@
       <div class="col-md-4 section">
         <div class="section-header">Editing Event</div>
 
-        <div class="field">
-          <%= f.label :title %>
-          <%= f.text_field :title, id: :event_title %>
+        <div class="row row-padding field">
+          <div class="col-sm-6 right-justify"><%= f.label 'Title:' %></div>
+          <div class="col-sm-6 left-justify"><%= f.text_field :title, id: :event_title %></div>
         </div>
 
-        <div class="field">
-          <%= f.label 'Category' %>
-          <%= f.collection_select :category_id, Event.categories, :first, :last, id: :event_category_id %>
+        <div class="row row-padding field">
+          <div class="col-sm-6 right-justify"><%= f.label 'Category:' %></div>
+          <div class="col-sm-6 left-justify"><%= f.collection_select :category_id, Event.categories, :first, :last %></div>
         </div>
 
-        <div class="field">
-          <%= f.label :start %>
-          <%= f.datetime_select :start, id: :event_start %>
+        <div class="row row-padding field">
+          <div class="col-sm-6 right-justify"><%= f.label 'Start Date:' %></div>
+          <div class="col-sm-6 left-justify"><%= f.datetime_select :start, id: :event_start %></div>
         </div>
 
-        <div class="field">
-          <%= f.label :end %>
-          <%= f.datetime_select :end, id: :event_end %>
+        <div class="row row-padding field">
+          <div class="col-sm-6 right-justify"><%= f.label 'End Date:' %></div>
+          <div class="col-sm-6 left-justify"><%= f.datetime_select :end, id: :event_end %></div>
         </div>
 
-        <div class="field">
-          <%= f.label :location %>
-          <%= f.text_field :location, id: :event_location %>
+        <div class="row row-padding field">
+          <div class="col-sm-6 right-justify"><%= f.label 'Location:' %></div>
+          <div class="col-sm-6 left-justify"><%= f.text_field :location, id: :event_location %></div>
         </div>
 
-        <div class="field">
-          <%= f.label 'Public' %>
-          <%= f.check_box :ispublic, id: :event_ispublic %>
+        <div class="row row-padding field">
+          <div class="col-sm-6 right-justify"><%= f.label 'Is this event public?' %></div>
+          <div class="col-sm-6 left-justify"><%= f.check_box :ispublic, id: :event_ispublic %></div>
         </div>
       </div>
+
       <!-- Tasks Section -->
       <div class="col-md-3 section">
         <div class="section-header">Tasks</div>
+        <div class="section-body">
 
+        </div>
       </div>
 
       <!-- Comments Section -->
       <div class="col-md-3 section">
         <div class="section-header">Comments</div>
+        <div class="section-body">
 
-
+        </div>
       </div>
     </div>
 
