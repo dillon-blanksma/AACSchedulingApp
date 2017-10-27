@@ -49,6 +49,13 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  gem 'spring-commands-rspec'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.7.0'
+  gem 'factory_girl_rails', '~> 4.8.0'
+# leave other gems provided by Rails
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

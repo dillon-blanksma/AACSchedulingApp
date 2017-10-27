@@ -9,16 +9,16 @@ class Event < ApplicationRecord
       :other => 'Other'
   }
 
+  def initialize
+    @tasks = []
+    @comments = []
+  end
+
   attr_accessor :tasks
   attr_accessor :comments
 
   def self.categories
     @@categories
-  end
-
-  def initialize
-    @tasks = []
-    @comments = []
   end
 
 end
